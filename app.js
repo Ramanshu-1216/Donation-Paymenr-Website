@@ -10,8 +10,8 @@ const app = express();
 var name, email, contact, amount;
 
 const razorpay = new Razorpay({
-    key_id: "rzp_test_0GnYME0C4w8jeV",
-    key_secret: "nQcSFX73S37NRwOgtDJysvNv"
+    key_id: process.env.KEY_ID,
+    key_secret: process.env.KEY_SECRET
 });
 
 app.set("views", "views");
